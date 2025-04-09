@@ -73,7 +73,7 @@ WHERE I.WarehouseID = W.WarehouseID
 GROUP BY I.WarehouseID;
 
 -- 2.50
-SELECT I.WarehouseID, AVG(QuantityOnHand) AS AverageQuantityOnHand
+SELECT I.WarehouseID, AVG(QuantityOnHand) as AverageQuantityOnHand
 FROM Inventory I
 JOIN Warehouse W
 ON I.WarehouseID = W.WarehouseID
